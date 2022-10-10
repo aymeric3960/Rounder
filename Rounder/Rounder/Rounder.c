@@ -1,16 +1,18 @@
 /*
- Clauzel Aymeric 
- 01.10.2022
- Une fonction pour arrondir <x.25=x.0 >x.25=x.5 <X.75=x.5 >x.75=x+1.0
- Utilisant Zeal
+Projet: Faire un programme pour arrondir des valeurs  
+folder name: Rounder.c
+Author:  Clauzel Aymeric 
+Description: Corps d'un programme pour s'entrainer à faire des chosees
+Une entrée utilisateur donne un chiffre a virgule 
+La sortie est le chiffre arrondis à la demie
+Creation: 01.10.2022
+Modif:  10.10.2022
 */
 
-// Add Libs
+// Librairies stndr
 #include <stdio.h>
+// Librairies perso 
 #include "header.h"
-
-
-
 
 // corps
 void main(void)
@@ -24,12 +26,12 @@ void main(void)
         //Affiche la demande
         printf("Bjr, Introduire un nombre \n");
         //Récupére une valeure 
-        scanf_s("%lf",&valIntroduite);
+        scanf("%lf",&valIntroduite);
 
         //Appel fonction d'arrondis puis l'affiche avec 2 décimales
         printf("Resultat =  %.2lf \n",Comp(valIntroduite));
 
-        //l'affiche avec 2 décimales résultat strat macro
+        //l'affiche avec 2 décimales résultat macro
         //printf("Resultat =  %.2lf \n", MComp(valIntroduite));
 
         //Appel fonction strat d'arrondis puis l'affiche avec 2 décimales
